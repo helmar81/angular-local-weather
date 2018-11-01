@@ -58,4 +58,3 @@ export class WeatherService implements IWeatherService {
     return kelvin - 273.15
   }
 }
-
