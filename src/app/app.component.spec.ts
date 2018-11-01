@@ -3,10 +3,12 @@ import { AppComponent } from './app.component'
 import { CurrentWeatherComponent } from './current-weather/current-weather.component'
 import { WeatherService } from './weather/weather.service'
 import { WeatherServiceFake } from './weather/weather.service.fake'
+import {MaterialModule} from './material.module'
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [MaterialModule],
       declarations: [AppComponent, CurrentWeatherComponent],
       providers: [{ provide: WeatherService, useClass: WeatherServiceFake }]
     }).compileComponents()
@@ -28,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent)
     fixture.detectChanges()
     const compiled = fixture.debugElement.nativeElement
-    expect(compiled.querySelector('h1').textContent).toContain('LocalCast Weather')
+    expect(compiled.querySelector('span').textContent).toContain('LocalCast Weather')
   })
 })
