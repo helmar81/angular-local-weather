@@ -4,8 +4,8 @@
   "scripts": {
     "standardize": "prettier **/*.ts --write",
     "ng": "ng",
-    "start": "standardize && ng serve --port 5000",
-    "build": "standardize && ng build",
+    "start": "npm run standardize && ng serve --port 5000",
+    "build": "npm run standardize && ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
