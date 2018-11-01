@@ -7,10 +7,11 @@ import { FlexLayoutModule } from '@angular/flex-layout'
 
 import { AppComponent } from './app.component'
 import { CurrentWeatherComponent } from './current-weather/current-weather.component'
-import { WeatherService } from './weather/weather.service'
+import { WeatherService } from './weather/weather.service';
+import { CitySearchComponent } from './city-search/city-search.component'
 
 @NgModule({
-  declarations: [AppComponent, CurrentWeatherComponent],
+  declarations: [AppComponent, CurrentWeatherComponent, CitySearchComponent],
   imports: [
     BrowserModule, HttpClientModule,
     MaterialModule, FlexLayoutModule,
