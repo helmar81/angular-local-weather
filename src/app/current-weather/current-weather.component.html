@@ -2,7 +2,7 @@
   <div fxLayout="row" fxLayoutAlign="center center">
     <div fxFlex="66%" class="mat-title no-margin">{{ current.city }}, {{ current.country }}</div>
     <div fxFlex class="right mat-subheading-2 no-margin">
-      {{ current.date | date: 'EEEE d MMM' }}{{ getOrdinal(current.date) }}
+      {{ current.date | date: 'EEEE MMM d' }}{{ getOrdinal(current.date) }}
     </div>
   </div>
   <div fxLayout="row" fxLayoutAlign="center center">

@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   // templateUrl: './app.component.html',
   // styleUrls: ['./app.component.css']
   template: `
-    <div>
+    <div class="content-margin">
       <mat-toolbar color="primary">
         <span>LocalCastWeather</span>
       </mat-toolbar>
